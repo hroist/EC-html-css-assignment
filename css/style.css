@@ -53,7 +53,25 @@ html, body{
         justify-content: space-between;
     }
 
+    .top-menu .dropdown-theme {
+        background-color: var(--color-theme);
+        color: var(--color-white);
+    }
+
+    .top-menu .dropdown-theme button{
+        background-color: var(--color-theme);
+        color: var(--color-white);
+        border: none;
+    }
+        .top-menu .dropdown-theme button:hover{
+            color: var(--color-theme-dark);
+        }
+
     .top-menu a {
         color: var(--color-white);
+        text-decoration: none;
         margin: 0 0.15em;
     }
+        .top-menu a:hover{
+            color: var(--color-theme-dark);
+        }
