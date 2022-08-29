@@ -112,7 +112,7 @@ html, body{
 .main-menu {
     background-color: var(--color-white);
     color: var(--color-theme-dark);
-    padding: 2rem 0;
+
     
 }
 
@@ -121,6 +121,7 @@ html, body{
         display:flex;
         justify-content: space-between;
         align-items: center;
+        padding: 2rem 0;
     }
 
     .main-menu .logo{
@@ -160,15 +161,13 @@ html, body{
             font-size: var(--font-size-16);
         }
 
-/* Bottom Menu (header) */
-.bottom-menu {
-    background-color: var(--color-white);
-    color: var(--color-theme-dark);
-}
+    /* Bottom Navigation Menu (header) */
+    .main-menu .nav-menu {
+        background-color: var(--color-white);
+        color: var(--color-theme-dark);
+        border-top: 1px solid var(--color-grey-2);
+    }
 
-.bottom-menu > .container{
-    display:flex;
-}
 
 /* Responsive settings */
 @media (min-width:678px){
