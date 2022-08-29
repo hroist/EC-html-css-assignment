@@ -20,14 +20,40 @@
     --font-weight-regular: 400;
     --font-weight-medium: 500;
     --font-weight-bold: 700;
-    --font-size-14: 1.17rem;
-    --font-size-16: 1.33rem;
-    --font-size-18: 1.50rem;
-    --font-size-24: 2rem;
-    --font-size-36: 3rem;
-    --font-size-60: 5rem;
+    --font-size-14: 0.875rem;
+    --font-size-16: 1rem;
+    --font-size-18: 1.125rem;
+    --font-size-24: 1.5rem;
+    --font-size-36: 2.25rem;
+    --font-size-60: 3.75rem;
 
     --border-radius-small: 8px;
     --border-radius-medium: 25px;
     --border-radius-rounded: 50%;
 }
+
+/* General styles */
+html, body{
+    font-size: var(--font-size-16);
+    line-height: 1.5;
+    font-family: var(--font-roboto);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-theme-dark);
+}
+
+/* Top Menu (header) */
+.top-menu {
+    background-color: var(--color-theme);
+    color: var(--color-white);
+}
+    .top-menu > .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .top-menu a {
+        color: var(--color-white);
+        margin: 0 0.15em;
+    }
