@@ -4,6 +4,7 @@
     <title>Title</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" description="Kenkata - Shopping is more fun">
     <script src="https://kit.fontawesome.com/41c8b474e2.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous" defer></script>
@@ -13,10 +14,10 @@
     <header>
         <div class="top-menu">
             <div class="container">
-                <div>
+                <div class="site-settings">
                     <div class="dropdown dropdown-theme">
                         <button type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            <span id="selected language">ENG<i class="fa-solid fa-angle-down ms-2"></i></span>
+                            <span id="selected-language">ENG<i class="fa-solid fa-angle-down ms-2"></i></span>
                         </button>
                         <ul id="languages" class="dropdown-menu dropdown-theme">
                             <a class="dropdown-item" href="#">ENG</a>
@@ -24,12 +25,22 @@
                             <a class="dropdown-item" href="#">GER</a>
                         </ul>
                     </div>
+                    <div class="dropdown dropdown-theme">
+                        <button type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <span id="selected-currency">EUR<i class="fa-solid fa-angle-down ms-2"></i></span>
+                        </button>
+                        <ul id="currencies" class="dropdown-menu dropdown-theme">
+                            <a class="dropdown-item" href="#">EUR</a>
+                            <a class="dropdown-item" href="#">SEK</a>
+                            <a class="dropdown-item" href="#">GBP</a>
+                        </ul>
+                    </div>
                 </div>
                 <div class="menu-links">
                     <a href="">Newsletter</a>
                     <a href="">Contact us</a>
                     <a href="">FAQs</a>
-                    <span class="social-media">
+                    <span class="social-media ms-5">
                         <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
                         <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
@@ -39,11 +50,40 @@
             </div>
         </div>
         <div class="main-menu">
-
-        </div class="bottom-menu">
-        <div>
-
+            <div class="container">
+                <div class="logo">
+                    <img src="images/Logo.svg" alt="Kenkatas Logo">
+                </div>
+                <div class="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control searchbox" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                          <button class="btn" type="button"><i class="fa-regular fa-magnifying-glass"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" border main-menu-links">
+                    <a class="main-link" href=""><i class="fa-regular fa-user"></i> My account</a>
+                    <a class="main-link"href=""><i class="fa-regular fa-heart"></i></a>
+                    <a class="main-link"href=""><i class="fa-regular fa-shuffle"></i></a>
+                    <a class="main-link"href=""><i class="fa-regular fa-bag-shopping"></i>
+                        <span id="cart-total">99999.00</span>
+                    </a>
+                </div>
+            </div>
         </div>
+
+        <div class="bottom-menu">
+            <div class="container">
+                <div>
+                    Browse links, dropdown
+                </div>
+                <div>
+                    special offer
+                </div>
+            </div>
+        </div>
+
     </header>  
 
     <main>
