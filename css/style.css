@@ -56,16 +56,36 @@ html, body{
     .top-menu .dropdown-theme {
         background-color: var(--color-theme);
         color: var(--color-white);
+        border:none; 
     }
 
-    .top-menu .dropdown-theme button{
+        .top-menu .dropdown-theme .dropdown-menu {
         background-color: var(--color-theme);
         color: var(--color-white);
-        border: none;
-    }
-        .top-menu .dropdown-theme button:hover{
+        border:none; 
+        width: 150px;
+        }
+
+        .top-menu .dropdown-theme .dropdown-menu .dropdown-item {
+            background-color: var(--color-theme);
+            color: var(--color-white);
+            border:none; 
+            width: 100%;
+            margin: 0;
+        }
+        .top-menu .dropdown-theme .dropdown-menu .dropdown-item:hover {
             color: var(--color-theme-dark);
         }
+
+        .top-menu .dropdown-theme button{
+            background-color: var(--color-theme);
+            color: var(--color-white);
+            border: none;
+        }
+            .top-menu .dropdown-theme button:hover{
+                color: var(--color-theme-dark);
+            }
+
 
     .top-menu a {
         color: var(--color-white);
