@@ -73,7 +73,7 @@ html, body{
         height: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: end;
     }
 
     .top-menu a {
@@ -86,9 +86,11 @@ html, body{
         }
 /* Language and currency choices */
     .top-menu .container .site-settings{
+        flex: 4;
         display:flex;
-        justify-content: space-between;
+        justify-content: end;
         align-items: center;
+
     }
     
         .top-menu .site-settings .dropdown-theme {
@@ -255,31 +257,57 @@ html, body{
             align-items: center;
         }
 
-/* Responsive settings */
-@media (min-width:678px){
+/* Responsive settings - Middle sized screen */
+@media (min-width:576px){
+
     .top-menu > .container {
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-    .top-menu .social-media {
-        display:inline;
-    }
+    .top-menu .container .site-settings{
+        flex: 4;
+        display:flex;
+        justify-content: flex-start;
+        align-items: center;
 
+    }
+    .top-menu .social-media {
+        display: inline;
+    }
 }
 
-@media (min-width:992px){
+/* Responsive settings - Large screen */
+@media (min-width:960px){
     .top-menu > .container {
         height: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+    }
+
+    .top-menu .container .site-settings{
+        flex: 6;
+        display:flex;
+        align-items: center;
+
+    }
+
+    .top-menu .menu-links {
+        display: flex;
+        justify-content: flex-end;
+        flex: 3;
     }
 
     .top-menu .social-media {
-        display:inline;
+        display: flex;
+        flex:1.5;
+        justify-content: flex-end;
     }
+
+
+
+
 }
 
 
