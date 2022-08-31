@@ -56,7 +56,7 @@
                 </div>
                 <div class="search">
                     <div class="input-group">
-                        <input type="text" class="form-control searchbox" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <input type="text" class="form-control searchbox" placeholder="Search">
                         <div class="input-group-append">
                           <button class="btn" type="button"><i class="fa-regular fa-magnifying-glass"></i></button>
                         </div>
@@ -71,13 +71,27 @@
                     </a>
                 </div>
             </div>
-                <nav class="nav-menu">
-                    <div>
-                        Browse links, dropdown
+            <nav>
+                <div class="container">
+                    <div class="browse-categories">
+                        <div class="dropdown">
+                            <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span>
+                                    <i class="fa-solid fa-bars me-2"></i> Browse categories
+                                </span>
+                                <i class="fa-solid fa-chevron-down ms-3"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</li>
+                                <li><a class="dropdown-item" href="#">Action</li>
+                                <li><a class="dropdown-item" href="#">Action</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div>
-                        special offer
+                    <div class="special-offer">
+                        <button class="btn btn-theme">Special offer</button>
                     </div>
+                </div>
             </nav>
         </div>
 
