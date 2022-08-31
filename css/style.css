@@ -64,10 +64,16 @@ html, body{
     .top-menu .social-media{
         display: none;
     }
+        .top-menu .social-media a{
+            margin-left: 0.4rem;
+        }
 
     .top-menu .menu-links {
         display: none;
     }
+        .top-menu .menu-links a {
+            margin-left: 0.4rem;
+        }
 
     .top-menu > .container {
         height: 100%;
@@ -144,17 +150,28 @@ html, body{
         padding: 2rem 1.1rem;
     }
 
+    /* Main menu Logotype */
     .main-menu .logo{
         flex: 2;
     }
-    .main-menu .search{
-        flex: 4;
-    }
-        .main-menu .search .searchbox{
-            border-color: var(--color-grey-2);
-            font-size: var(--font-size-14);
-        }
 
+        /* Main menu Search field */
+        .main-menu .search{
+            flex: 3;
+            align-self: center;
+        }
+            .main-menu .search .input-group{
+                display: flex;
+                justify-content: center;
+    
+            }
+            .main-menu .search .searchbox{
+                border-color: var(--color-grey-2);
+                font-size: var(--font-size-14);
+                display:none;
+            }
+
+    /* Main menu Links (my account etc.) */
     .main-menu .main-menu-links{
         display: flex;
         justify-content: flex-end;
@@ -172,16 +189,16 @@ html, body{
             color: var(--color-theme);
         }
 
-        .main-menu .main-menu-links .main-link:first-child{
-            margin: 0 2.5rem 0 0;
-        }
-
         .main-menu .main-menu-links .main-link:last-child{
             margin: 0 0 0 0.6rem;
         }
 
         .main-menu .main-menu-links .main-link i{
             font-size: 16px;
+        }
+
+        .main-menu .main-menu-links span{
+            display: none;
         }
 
     /* Bottom Navigation Menu (header) */
@@ -276,10 +293,24 @@ html, body{
     .top-menu .social-media {
         display: inline;
     }
+
+    /* ---- Main menu ---- */
+
+    /* Show text My account and amount in basket */
+    .main-menu .main-menu-links #cart-total{
+        display: inline;
+    }
+    .main-menu .main-menu-links{
+
+        flex: 7;
+    }
+
 }
 
 /* Responsive settings - Large screen */
 @media (min-width:960px){
+   
+    /*  ---- Top menu ---- */
     .top-menu > .container {
         height: 100%;
         display: flex;
@@ -287,7 +318,7 @@ html, body{
     }
 
     .top-menu .container .site-settings{
-        flex: 6;
+        flex: 4;
         display:flex;
         align-items: center;
 
@@ -305,7 +336,30 @@ html, body{
         justify-content: flex-end;
     }
 
+    /* ---- Main menu ---- */
 
+    /* Margin on My account */
+    .main-menu .main-menu-links .main-link:first-child{
+        margin: 0 2rem 0 0;
+    }
+    
+    .main-menu .main-menu-links{
+        flex: 3;
+    }
+        /* Show text My account and amount in basket */
+        .main-menu .main-menu-links span{
+            display: inline;
+        }
+    /* Main menu Search field */
+    .main-menu .search{
+        flex: 2;
+        display: flex;
+        justify-content: center;
+    }
+        /* Show search box input field */
+        .main-menu .search .searchbox{
+            display: inline;
+        }
 
 
 }
