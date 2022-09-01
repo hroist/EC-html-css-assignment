@@ -281,106 +281,6 @@ html, body{
             margin: 0.2rem 0.4rem;;
         }
 
-/* Responsive settings - Middle sized screen */
-@media (min-width:576px){
-
-/* ---- Top menu ---- */
-    .top-menu > .container {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-        .top-menu .container .site-settings{
-            flex: 4;
-            display:flex;
-            justify-content: flex-start;
-            align-items: center;
-        }
-
-    .top-menu .social-media {
-        display: inline;
-    }
-
-/* ---- Main menu ---- */
-    .main-menu .main-menu-links{
-        flex: 7;
-    }
-
-        /* Show text My account and amount in basket */
-        .main-menu .main-menu-links #cart-total{
-            display: inline;
-        }
-
-}
-
-/* Responsive settings - Large screen */
-@media (min-width:960px){
-   
-/*  ---- Top menu ---- */
-    .top-menu > .container {
-        height: 100%;
-        display: flex;
-        align-items: center;
-    }
-
-        .top-menu .container .site-settings{
-            flex: 4;
-            display:flex;
-            align-items: center;
-        }
-
-    .top-menu .menu-links {
-        display: flex;
-        justify-content: flex-end;
-        flex: 3;
-    }
-
-    .top-menu .social-media {
-        display: flex;
-        flex:1.5;
-        justify-content: flex-end;
-    }
-
-/* ---- Main menu ---- */
-
-    .main-menu .main-menu-links{
-        flex: 3;
-    }
-
-        /* Margin on My account */
-        .main-menu .main-menu-links .main-link:first-child{
-            margin: 0 2rem 0 0;
-        }
-    
-        /* Show text My account and amount in basket */
-        .main-menu .main-menu-links span{
-            display: inline;
-        }
-
-    /* Main menu Search field */
-    .main-menu .search{
-        flex: 2;
-        display: flex;
-        justify-content: center;
-    }
-
-        /* Show search box input field */
-        .main-menu .search .searchbox{
-            display: inline;
-        }
-
-/* --- Bottom Navigation Menu (header) --- */
-    .main-menu nav .browse-categories .browse-text{
-        display: flex;
-        flex: 2;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 0.5rem;
-    }
-
-}
 
 /* ---- Showcase ---- */
 
@@ -391,11 +291,26 @@ html, body{
     .showcase .container {
         display: flex;
         align-items: center;
+        justify-content: center;
+        padding: 0 2rem;
     }
+        .showcase .container .showcase-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
 
     .showcase h1{
         font-family: var(--font-play);
-        font-size: var(--font-size-60);
+        font-size: var(--font-size-36);
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .showcase p{
+        font-size: var(--font-size-14);
     }
 
     .showcase strong{
@@ -412,3 +327,183 @@ html, body{
         padding: 0.6rem 1rem;
 
     }
+
+    .showcase img {
+        display: none;
+        width: 100%;
+    }
+
+/* -------------------- RESPONSIVE SETTINGS --------------------- */
+/* Responsive settings - Small screens */
+@media (min-width:576px){
+
+    /* ---- Top menu ---- */
+        .top-menu > .container {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    
+            .top-menu .container .site-settings{
+                flex: 4;
+                display:flex;
+                justify-content: flex-start;
+                align-items: center;
+            }
+    
+        .top-menu .social-media {
+            display: inline;
+        }
+    
+    /* ---- Main menu ---- */
+        .main-menu .main-menu-links{
+            flex: 7;
+        }
+    
+            /* Show text My account and amount in basket */
+            .main-menu .main-menu-links #cart-total{
+                display: inline;
+            }
+    
+        /* ---- Showcase ---- */
+    .showcase h1{
+        font-size: var(--font-size-36);
+    }
+
+    
+    }
+
+    /* Responsive settings - Medium sized screens */
+    @media (min-width:768px){
+        /* ---- Top menu ---- */
+        .top-menu > .container {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    
+            .top-menu .container .site-settings{
+                flex: 4;
+                display:flex;
+                justify-content: flex-start;
+                align-items: center;
+            }
+    
+        .top-menu .social-media {
+            display: inline;
+        }
+    
+    /* ---- Main menu ---- */
+        .main-menu .main-menu-links{
+            flex: 7;
+        }
+    
+            /* Show text My account and amount in basket */
+            .main-menu .main-menu-links #cart-total{
+                display: inline;
+            }
+    
+        /* ---- Showcase ---- */
+
+    .showcase .container .showcase-text {
+        display: flex;
+        align-items: flex-start;
+        text-align: start;
+    }
+
+    .showcase h1{
+    font-family: var(--font-play);
+    font-size: 40px;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+    .showcase img {
+        display: inline;
+        width: 50%;
+    }
+
+    
+    }
+    /* Responsive settings - Large screen */
+    @media (min-width:960px){
+       
+    /*  ---- Top menu ---- */
+        .top-menu > .container {
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+    
+            .top-menu .container .site-settings{
+                flex: 4;
+                display:flex;
+                align-items: center;
+            }
+    
+        .top-menu .menu-links {
+            display: flex;
+            justify-content: flex-end;
+            flex: 3;
+        }
+    
+        .top-menu .social-media {
+            display: flex;
+            flex:1.5;
+            justify-content: flex-end;
+        }
+    
+    /* ---- Main menu ---- */
+    
+        .main-menu .main-menu-links{
+            flex: 3;
+        }
+    
+            /* Margin on My account */
+            .main-menu .main-menu-links .main-link:first-child{
+                margin: 0 2rem 0 0;
+            }
+        
+            /* Show text My account and amount in basket */
+            .main-menu .main-menu-links span{
+                display: inline;
+            }
+    
+        /* Main menu Search field */
+        .main-menu .search{
+            flex: 2;
+            display: flex;
+            justify-content: center;
+        }
+    
+            /* Show search box input field */
+            .main-menu .search .searchbox{
+                display: inline;
+            }
+    
+    /* --- Bottom Navigation Menu (header) --- */
+        .main-menu nav .browse-categories .browse-text{
+            display: flex;
+            flex: 2;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 0.5rem;
+        }
+
+    /* ---- Showcase ---- */
+    .showcase img {
+        display: inline;
+    }
+
+    .showcase h1{
+        font-family: var(--font-play);
+        font-size: 60px;
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+    }
+    
