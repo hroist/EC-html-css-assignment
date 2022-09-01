@@ -212,6 +212,7 @@ html, body{
     .main-menu > nav > .container {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         padding: 0 1.1rem;
     }
 
@@ -221,15 +222,16 @@ html, body{
 
             
             .main-menu nav .browse-categories button{
-                font-size: 1rem;
+                background-color: var(--color-theme);
+                color: var(--color-white);
+                border: none;
+                font-size: 0.8rem;
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                padding: 0.6rem 1rem ;
-                background-color: var(--color-theme);
-                border: none;
-                color: var(--color-white);
+                padding: 1rem 1rem ;
+                height: 100%;;
             }
 
                 .main-menu nav .browse-categories button:hover{
@@ -237,12 +239,12 @@ html, body{
                 }
 
                 .main-menu nav .browse-categories button span{
-                    display: flex;
+                    display: none;
                     align-items: center;
                 }
 
                     .main-menu nav .browse-categories button span i{
-                        font-size: 1.3em;
+                        font-size: 1.5rem;
                     }
 
             
@@ -272,6 +274,7 @@ html, body{
             display: flex;
             justify-content: flex-end;
             align-items: center;
+            margin: 0.2rem 0.4rem;;
         }
 
 /* Responsive settings - Middle sized screen */
@@ -283,27 +286,29 @@ html, body{
         align-items: center;
         justify-content: space-between;
     }
-    .top-menu .container .site-settings{
-        flex: 4;
-        display:flex;
-        justify-content: flex-start;
-        align-items: center;
+        .top-menu .container .site-settings{
+            flex: 4;
+            display:flex;
+            justify-content: flex-start;
+            align-items: center;
 
-    }
+        }
     .top-menu .social-media {
         display: inline;
     }
 
     /* ---- Main menu ---- */
 
-    /* Show text My account and amount in basket */
-    .main-menu .main-menu-links #cart-total{
-        display: inline;
-    }
+
     .main-menu .main-menu-links{
 
         flex: 7;
     }
+        /* Show text My account and amount in basket */
+        .main-menu .main-menu-links #cart-total{
+            display: inline;
+        }
+
 
 }
 
@@ -317,12 +322,12 @@ html, body{
         align-items: center;
     }
 
-    .top-menu .container .site-settings{
-        flex: 4;
-        display:flex;
-        align-items: center;
+        .top-menu .container .site-settings{
+            flex: 4;
+            display:flex;
+            align-items: center;
 
-    }
+        }
 
     .top-menu .menu-links {
         display: flex;
@@ -338,29 +343,36 @@ html, body{
 
     /* ---- Main menu ---- */
 
-    /* Margin on My account */
-    .main-menu .main-menu-links .main-link:first-child{
-        margin: 0 2rem 0 0;
-    }
-    
-    .main-menu .main-menu-links{
-        flex: 3;
-    }
-        /* Show text My account and amount in basket */
-        .main-menu .main-menu-links span{
-            display: inline;
+        .main-menu .main-menu-links{
+            flex: 3;
         }
-    /* Main menu Search field */
-    .main-menu .search{
-        flex: 2;
-        display: flex;
-        justify-content: center;
-    }
+            /* Margin on My account */
+            .main-menu .main-menu-links .main-link:first-child{
+                margin: 0 2rem 0 0;
+            }
+        
+            /* Show text My account and amount in basket */
+            .main-menu .main-menu-links span{
+                display: inline;
+            }
+
+        /* Main menu Search field */
+        .main-menu .search{
+            flex: 2;
+            display: flex;
+            justify-content: center;
+        }
+
         /* Show search box input field */
         .main-menu .search .searchbox{
             display: inline;
         }
 
+    /* Bottom Navigation Menu (header) */
+        .main-menu nav .browse-categories button span{
+            display: flex;
+            align-items: center;
+        }
 
 }
 
