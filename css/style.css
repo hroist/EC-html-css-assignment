@@ -34,7 +34,7 @@
 
 /* General styles */
 html, body{
-    font-size: 16px;
+    font-size: var(--font-size-16);
     line-height: 1.5;
     font-family: var(--font-roboto);
     font-weight: var(--font-weight-regular);
@@ -59,7 +59,7 @@ html, body{
 .top-menu {
     background-color: var(--color-theme);
     color: var(--color-white);
-    font-size: 14px;
+    font-size: var(--font-size-14);
 }
 
     .top-menu > .container {
@@ -125,7 +125,7 @@ html, body{
     /* Links and social media  */
     .top-menu .menu-links {
         display: none;
-        font-size: 12px;
+        font-size: var(--font-size-14);
     }
 
         .top-menu .menu-links a {
@@ -144,7 +144,7 @@ html, body{
 .main-menu {
     background-color: var(--color-white);
     color: var(--color-theme-dark);
-    font-size: 14px;
+    font-size: var(--font-size-14);
 }
 
     .main-menu > .container{
@@ -201,7 +201,7 @@ html, body{
             }
 
             .main-menu .main-menu-links .main-link i{
-                font-size: 16px;
+                font-size: var(--font-size-16);
             }
 
         .main-menu .main-menu-links span{
@@ -336,6 +336,9 @@ html, body{
 /* -------------------- RESPONSIVE SETTINGS --------------------- */
 /* Responsive settings - Small screens */
 @media (min-width:576px){
+    .container{
+        max-width: 540px;
+    }
 
     /* ---- Top menu ---- */
         .top-menu > .container {
@@ -376,6 +379,9 @@ html, body{
 
     /* Responsive settings - Medium sized screens */
     @media (min-width:768px){
+        .container{
+            max-width: 720px;
+        }
         /* ---- Top menu ---- */
         .top-menu > .container {
             height: 100%;
@@ -415,7 +421,7 @@ html, body{
 
     .showcase h1{
     font-family: var(--font-play);
-    font-size: 40px;
+    font-size: 3rem;
     margin-top: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -429,8 +435,10 @@ html, body{
     
     }
     /* Responsive settings - Large screen */
-    @media (min-width:960px){
-       
+    @media (min-width:992px){
+    .container{
+        max-width: 960px;
+    }
     /*  ---- Top menu ---- */
         .top-menu > .container {
             height: 100%;
@@ -500,7 +508,7 @@ html, body{
 
     .showcase h1{
         font-family: var(--font-play);
-        font-size: 60px;
+        font-size: 3.5rem;
         margin-top: 1.5rem;
         display: flex;
         flex-direction: column;
