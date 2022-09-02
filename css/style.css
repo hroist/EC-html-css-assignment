@@ -20,9 +20,9 @@
     --font-weight-regular: 400;
     --font-weight-medium: 500;
     --font-weight-bold: 700;
-    --font-size-14: 0.9rem;
-    --font-size-16: 1rem;
-    --font-size-18: 1.1rem;
+    --font-size-14: 0.8rem;
+    --font-size-16: 0.9rem;
+    --font-size-18: 1rem;
     --font-size-24: 1.5rem;
     --font-size-36: 2rem;
     --font-size-60: 4rem;
@@ -54,6 +54,10 @@ html, body{
         background-color: var(--color-theme-dark);
         color: var(--color-theme-light);
     }
+
+.collapse{
+    display: none;
+}
 
 /* Top Menu (header) */
 .top-menu {
@@ -126,6 +130,7 @@ html, body{
     .top-menu .menu-links {
         display: none;
         font-size: var(--font-size-14);
+        gap: 1rem;
     }
 
         .top-menu .menu-links a {
@@ -231,8 +236,7 @@ html, body{
                 background-color: var(--color-theme);
                 color: var(--color-white);
                 border: none;
-                font-size: 0.8rem;
-                width: 100%;
+                font-size: var(--font-size-18);
                 display: flex;
                 justify-content: space-between;       
                 align-items: center;
@@ -303,7 +307,7 @@ html, body{
 
     .showcase h1{
         font-family: var(--font-play);
-        font-size: var(--font-size-36);
+        font-size: 3rem;
         margin-top: 1.5rem;
         display: flex;
         flex-direction: column;
@@ -311,6 +315,8 @@ html, body{
 
     .showcase p{
         font-size: var(--font-size-14);
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 
     .showcase strong{
@@ -368,10 +374,17 @@ html, body{
             .main-menu .main-menu-links #cart-total{
                 display: inline;
             }
-    
+
+        .main-menu nav .browse-categories .browse-text{
+            display: flex;
+            flex: 2;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 0.5rem;
+        }
         /* ---- Showcase ---- */
     .showcase h1{
-        font-size: var(--font-size-36);
+        font-size: 3.5rem;
     }
 
     
@@ -410,6 +423,18 @@ html, body{
             .main-menu .main-menu-links #cart-total{
                 display: inline;
             }
+
+        .main-menu nav .browse-categories .browse-text{
+            display: flex;
+            flex: 2;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 0.5rem;
+        }
+
+        .main-menu nav .browse-categories .collapse{
+            display: inline;
+        }
     
         /* ---- Showcase ---- */
 
@@ -430,6 +455,11 @@ html, body{
     .showcase img {
         display: inline;
         width: 50%;
+    }
+
+    .showcase p{
+        margin-left: 0;
+        margin-right: 0;
     }
 
     
@@ -501,6 +531,12 @@ html, body{
             padding: 0 0.5rem;
         }
 
+        .main-menu nav .browse-categories .collapse{
+            display: inline;
+        }
+
+
+
     /* ---- Showcase ---- */
     .showcase img {
         display: inline;
@@ -508,10 +544,15 @@ html, body{
 
     .showcase h1{
         font-family: var(--font-play);
-        font-size: 3.5rem;
+        font-size: 4rem;
         margin-top: 1.5rem;
         display: flex;
         flex-direction: column;
+    }
+
+    .showcase p{
+        margin-left: 0;
+        margin-right: 0;
     }
     }
     
