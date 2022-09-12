@@ -280,7 +280,8 @@ html, body{
             }
 
                 .main-menu nav .browse-categories button:hover{
-                    color: var(--color-theme-dark);
+                    background-color: var(--color-theme-dark);
+                    color: var(--color-white);
                 }
 
                 .main-menu nav .browse-categories .browse-text{
@@ -433,6 +434,7 @@ html, body{
         gap: 1rem;
         grid-template-columns: repeat(5, minmax(100px, 249px));
         grid-template-rows: repeat(3, minmax(100px, 249px));
+        margin-bottom: 3rem;
     }
 
     #category-box-1 {
@@ -487,7 +489,19 @@ html, body{
             color: var(--color-theme);
             padding: 0.5rem 1rem;
             font-weight: var(--font-weight-medium);
+            height: 30px;
         }
+
+            .shop-by-category .category-box:hover .category-box-title{
+                height: 55px;
+            }
+
+                .shop-by-category .category-box .category-box-title span {
+                    font-size: var(--font-size-14);
+                    color: var(--color-white);
+                    display: block;
+                    margin-top: 0.2rem;
+                }
 
 /* -------------------- RESPONSIVE SETTINGS --------------------- */
 /* Responsive settings - Small screens */
@@ -752,6 +766,8 @@ html, body{
         grid-template-columns: repeat(4, 1fr);
         gap: 2rem;
         align-items: center;
+        margin-left: 5rem;
+        margin-right: 5rem;
     }
 
         .info-boxes .info-box-grid .info-box img{
