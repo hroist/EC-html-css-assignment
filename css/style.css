@@ -664,7 +664,8 @@ html, body{
         justify-content: center;
         background-color: var(--color-theme);
         height: 300px;
-        flex: 2;
+        width: 220px;
+
     }
 
         .new-customer-banner .banner-box h1{
@@ -830,6 +831,7 @@ html, body{
         flex-direction: column;
         font-size: var(--font-size-16);
         align-self: baseline;
+        width: 220px ;
     }
 
         .flash-sale-banner .flash-sale-box h1 {
@@ -883,7 +885,7 @@ html, body{
                 height: 74px;
                 aspect-ratio: 1;
                 border-radius: var(--border-radius-rounded);
-                border-style: dotted;
+                border-style: dashed;
                 border-width: 2px;
                 border-color: var(--color-theme);
                 animation: rotate 20s infinite linear;
@@ -1007,7 +1009,7 @@ html, body{
     
             .top-sellers .card .card-menu {
                 position: absolute;
-                z-index: 1;
+                z-index: 2;
                 top: 100%;
                 right: 1rem;
                 list-style: none;
@@ -1069,6 +1071,10 @@ html, body{
 
     .footer .container {
         padding: 1.5rem 0 0.5rem 0;
+    }
+
+    .footer p {
+        margin-left: 1rem;
     }
 
 
