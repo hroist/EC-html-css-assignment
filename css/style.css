@@ -539,7 +539,7 @@ html, body{
     .new-arrivals .card{
         position: relative;
         height: 400px;
-        width: 275px;
+        width: 295px;
         overflow: hidden;
     }
 
@@ -694,6 +694,7 @@ html, body{
 
         .new-customer-banner .banner-body p {
             margin-bottom: 2rem;
+            margin-right: 2rem;
         }
 
 /* ---- Featured products ---- */
@@ -1037,6 +1038,27 @@ html, body{
 
 
 /* ---- Subscribe to newsletter ---- */
+.newsletter-subscribe {
+    margin-top: 6rem;
+    background-color: var(--color-grey-4);
+}
+
+    .newsletter-subscribe .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .newsletter-subscribe .subscribe-img {
+        background-color: var(--color-grey-1);
+        width: 450px;
+        height: 250px;
+    }
+
+    .newsletter-subscribe .section-title {
+        text-align: left;
+        padding-right: 4rem;
+    }
 
 
 /* ---- Footer ---- */
