@@ -42,6 +42,16 @@ html, body{
     color: var(--color-theme-dark);
 }
 
+a {
+    color: var(--color-theme);
+    text-decoration: none;
+    transition: 0.15s ease-in-out;
+}
+
+    a:hover {
+        color: var(--color-theme-dark);
+    }
+
 .bg-theme {
     background-color: var(--color-theme);
 }
@@ -959,17 +969,36 @@ html, body{
 .site-title {
     background-color: var(--color-theme-dark-fade);
     color: var(--color-white);
+    padding: 3rem 0;
 }
 
     .site-title .container {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
     }
 
     .site-title h1{
         color: var(--color-theme);
         font-size: var(--font-size-24);
+        margin: 0;
     }
+
+    .site-title .site-title-breadcrumb {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+        .site-title .site-title-breadcrumb li+li::before{
+            content: "/\00a0";
+            padding: 0 0.7rem;
+        }
+
+
 
 /* ---- Footer ---- */
 .footer {
@@ -1314,6 +1343,7 @@ html, body{
         overflow: hidden;
         left: 50%;
         transform: translateX(-50%);
+        margin-bottom: 0;
     }
 
         .top-sellers .card .card-body {
