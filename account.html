@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>KENKATA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kenkata - Shopping is more fun">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/41c8b474e2.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous" defer></script>
+    <!-- Egen CSS-fil -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Header: Top menu, Main menu and Bottom Nav menu -->
+    <header> 
+        <!-- Top menu -->
+        <div class="top-menu">
+            <div class="container">
+                <!-- Language and currency settings -->
+                <div class="site-settings">
+                    <div class="dropdown dropdown-theme">
+                        <button type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <span id="selected-language">ENG<i class="fa-solid fa-angle-down ms-2"></i></span>
+                        </button>
+                        <ul id="languages" class="dropdown-menu dropdown-theme">
+                            <a class="dropdown-item" href="#">ENG</a>
+                            <a class="dropdown-item" href="#">SWE</a>
+                            <a class="dropdown-item" href="#">GER</a>
+                        </ul>
+                    </div>
+                    <div class="dropdown dropdown-theme">
+                        <button type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <span id="selected-currency">EUR<i class="fa-solid fa-angle-down ms-2"></i></span>
+                        </button>
+                        <ul id="currencies" class="dropdown-menu dropdown-theme">
+                            <a class="dropdown-item" href="#">EUR</a>
+                            <a class="dropdown-item" href="#">SEK</a>
+                            <a class="dropdown-item" href="#">GBP</a>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Links and social media -->
+                <div class="menu-links">
+                    <a href="">Newsletter</a>
+                    <a href="">Contact us</a>
+                    <a href="">FAQs</a>
+                </div>
+                    <div class="social-media ms-2 me-1">
+                        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+            </div>
+        </div>
+        <!-- Main menu -->
+        <div class="main-menu">
+            <div class="container">
+                <div class="logo">
+                    <img src="images/Logo.svg" alt="Kenkatas Logo">
+                </div>
+                <!-- Search field -->
+                <div class="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control searchbox" placeholder="Search">
+                        <div class="input-group-append">
+                          <button class="btn" type="button"><i class="fa-regular fa-magnifying-glass"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- My account and Shopping cart links -->
+                <div class=" main-menu-links">
+                    <a class="main-link" href="account.html"><i class="fa-regular fa-user"></i> <span>My account</span></a>
+                    <a class="main-link"href=""><i class="fa-regular fa-heart"></i></a>
+                    <a class="main-link"href=""><i class="fa-regular fa-shuffle"></i></a>
+                    <a id="cart" class="main-link"href="">
+                        <span class="position-absolute badge rounded-pill">
+                            99+
+                            <span class="visually-hidden">unread messages</span>
+                          </span>
+                          <i class="fa-regular fa-bag-shopping"></i>
+                        <span>99999.00</span>
+                    </a>
+                </div>
+            </div>
+        
+            <!-- Bottom Nav menu -->
+            <nav>
+                <div class="container">
+                    <!-- Browse categories navigation -->
+                    <div class="browse-categories">
+                        <div class="dropdown">
+                            <button type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa-solid fa-bars me-2"></i>
+                                <span class="browse-text">
+                                     <span class="me-1">Browse</span><span class="collapse">categories</span> <i class="fa-solid fa-chevron-down ms-3"></i>
+                                </span>
+                                
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Women's clothing</a></li>
+                                <li><a class="dropdown-item" href="#">Men's clothing</a></li>
+                                <li><a class="dropdown-item" href="#">Accessories</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Special offer button -->
+                    <div class="special-offer">
+                        <button class="btn btn-theme">SPECIAL OFFER</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>      
+    <section class="site-title">
+        <div class="container">
+            <h1>My account</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">My account</li>
+                </ol>
+              </nav>
+        </div>
+    </section>
+    
+ <div class="mt-5 container"></div>
+    
+    <!-- ---- Footer ---- -->
+    <footer class="footer">
+        <div class="container">
+            <p>© Copyright 2022 Kenkata</p>
+        </div>
+
+    </footer>
+
+</body>
+</html>

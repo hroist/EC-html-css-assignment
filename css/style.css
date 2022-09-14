@@ -4,6 +4,7 @@
     --color-theme: #20D3C2;
     --color-theme-light: #EDFCFA;
     --color-theme-dark: #0E153D;
+    --color-theme-dark-fade: #50546E;
     --color-dark: #080C24;
     --color-white: #FFFFFF;
     --color-grey-0: #AAAAAA;
@@ -405,6 +406,11 @@ html, body{
         margin: 2rem;
     }
 
+    .info-boxes .container-fluid {
+        display: flex;
+        justify-content: center;
+    }
+
         .info-boxes .info-box-grid {
             display: grid;
             gap: 0.5rem;
@@ -417,11 +423,12 @@ html, body{
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
-                padding: 0.8rem 0.4rem 0 1rem;
+                padding: 1.5rem 0.4rem 1.5rem 1rem;
                 gap: 1rem;
                 border-radius: var(--border-radius-small);
                 max-height: 60px;
                 transition: all 0.2s ease-in-out;
+
             }
 
                 .info-boxes .info-box-grid .info-box h3{
@@ -429,6 +436,10 @@ html, body{
                     font-weight: var(--font-weight-medium);
                     color: var(--color-theme);
                     transition: all 0.2s ease-in-out;
+                }
+
+                .info-boxes .info-box-grid .info-box p {
+                    margin: 0;
                 }
 
                 .info-boxes .info-box-grid .info-box img{
@@ -439,6 +450,7 @@ html, body{
             .info-boxes .info-box-grid .info-box:hover{
                 background-color: var(--color-theme);
                 color: var(--color-white);
+                cursor: pointer;
             }
 
                 .info-boxes .info-box-grid .info-box:hover h3{
@@ -460,6 +472,10 @@ html, body{
         grid-template-columns: repeat(5, minmax(100px, 249px));
         grid-template-rows: repeat(3, minmax(100px, 249px));
         margin-bottom: 3rem;
+    }
+
+    .shop-by-category .grid img {
+        height: 110%;
     }
 
     #category-box-1 {
@@ -530,7 +546,7 @@ html, body{
                 }
 
 
-/* ---- New arrivals ---- */
+/* ---- Product cards  (new arrivals, featured products) ---- */
 
 .new-arrivals{
     margin-bottom: 6rem;
@@ -1051,9 +1067,7 @@ html, body{
         align-items: center;
     }
 
-    .newsletter-subscribe .subscribe-img {
-        background-color: var(--color-grey-1);
-        width: 450px;
+    .newsletter-subscribe img {
         height: 250px;
     }
 
@@ -1062,6 +1076,16 @@ html, body{
         padding-right: 4rem;
     }
 
+
+.site-title {
+    background-color: var(--color-theme-dark-fade);
+    color: var(--color-white);
+}
+
+    .site-title h1{
+        color: var(--color-theme);
+        font-size: var(--font-size-24);
+    }
 
 /* ---- Footer ---- */
 .footer {
@@ -1146,7 +1170,7 @@ html, body{
                 color: var(--color-theme-dark);
                 display: flex;
                 justify-content: space-evenly;
-                padding: 1rem;
+                padding: 1.5rem 1rem;
                 gap: 1rem;
                 border-radius: var(--border-radius-small);
                 max-height: 90px;
@@ -1343,9 +1367,15 @@ html, body{
         grid-template-columns: repeat(4, 1fr);
         gap: 2rem;
         align-items: center;
+        justify-content: center;
         margin-left: 5rem;
         margin-right: 5rem;
+        max-width: 1400px;
     }
+
+        .info-boxes .info-box {
+            max-width: 300px;
+        }
 
         .info-boxes .info-box-grid .info-box img{
             width: 15%;
