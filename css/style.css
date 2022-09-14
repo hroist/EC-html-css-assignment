@@ -1321,11 +1321,12 @@ html, body{
         }
 
             .top-sellers .card:hover .card-body {
-                height: 55%;
+                height: 140px;
             }
 
         .top-sellers .card img {
             object-fit: cover;
+            height: 100%;
         }
 
     /* ---- Subscribe to newsletter ---- */
