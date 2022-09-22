@@ -22,7 +22,7 @@
     --font-weight-regular: 400;
     --font-weight-medium: 500;
     --font-weight-bold: 700;
-    --font-size-14: 0.7rem;
+    --font-size-14: 0.8rem;
     --font-size-16: 0.9rem;
     --font-size-18: 1rem;
     --font-size-24: 1.5rem;
@@ -232,24 +232,54 @@ a {
     /* Main menu Logotype */
     .main-menu .logo{
         flex: 2;
+        margin-right: 1rem;
     }
 
     /* Main menu Search field */
     .main-menu .search{
-        flex: 3;
+        flex: 1;
         align-self: center;
     }
 
-        .main-menu .search .input-group{
-            display: flex;
-            justify-content: center;  
+        .main-menu .search #searchForm{
+            height: 35px;
+            margin: auto;
+            position: relative;
         }
 
-        .main-menu .search .searchbox{
-            border-color: var(--color-grey-2);
-            font-size: var(--font-size-14);
-            display:none;
-        }
+            .main-menu #searchForm input {
+                display: none;
+                position: absolute;
+                border-radius: var(--border-radius-medium);
+                height: 100%;
+                width: 100%;
+                outline: none;
+                font-size: var(--font-size-16);
+                padding: 1rem;
+                border: 1px solid var(--color-grey-2);
+            }
+
+            .main-menu #searchForm input::placeholder {
+                color: var(--color-grey-0);
+            }
+
+            .main-menu #searchForm button {
+                position: absolute;
+                top: 0;
+                right: -3px;
+                width: 45px;
+                height: 100%;
+                background-color: var(--color-theme);
+                color: var(--color-white);
+                border: none;
+                border-radius: 0 var(--border-radius-medium) var(--border-radius-medium) 0;
+                font-size: var(--font-size-18);
+                transition: 0.3s ease-in-out;
+            }
+
+                .main-menu #searchForm button:hover {
+                    background-color: var(--color-theme-dark);
+                }
 
     /* Main menu Links (my account etc.) */
     .main-menu .main-menu-links{
@@ -258,6 +288,10 @@ a {
         align-items: center;
         flex: 3;
     }
+
+        .main-menu .main-menu-links #compare-products {
+            display: none;
+        }
 
         .main-menu .main-menu-links .main-link{
             color: var(--color-theme-dark);
@@ -302,7 +336,6 @@ a {
         background-color: var(--color-white);
         color: var(--color-theme-dark);
         border-top: 1px solid var(--color-grey-2);
-        border-bottom: 1px solid var(--color-grey-2);
     }
 
         .main-menu > nav > .container {
@@ -975,6 +1008,7 @@ a {
     background-color: var(--color-theme-dark-fade);
     color: var(--color-white);
     padding: 3rem 0;
+    height: 100%;
 }
 
     .site-title .container {
@@ -1003,16 +1037,13 @@ a {
             padding: 0 0.7rem;
         }
 
-.signup-signin {
 
-}
 
     .signup-signin .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding: 5rem 0;
-        gap: 2rem;
-        align-items: flex-start;
+        display: block;
+        padding: 3rem 1rem;
+        
+
     }
 
     .signup-signin .card{
@@ -1022,6 +1053,7 @@ a {
         border: none;
         font-size: var(--font-size-16);
         padding: 1.2rem 0.8rem;
+        margin-bottom: 2rem;
     }
 
         .signup-signin .card h2{
@@ -1192,9 +1224,29 @@ a {
     
     /* ---- Main menu ---- */
         .main-menu .main-menu-links{
-            flex: 7;
+            flex: 3;
         }
-    
+
+        .main-menu .search{
+            flex: 5;
+        }
+        .main-menu #searchForm input {
+            display: inherit;
+        }
+        .main-menu #searchForm button {
+            position: absolute;
+            top: 0;
+            right: -3px;
+            width: 45px;
+            height: 100%;
+            background-color: var(--color-theme);
+            color: var(--color-white);
+            border: none;
+            border-radius: 0 var(--border-radius-medium) var(--border-radius-medium) 0;
+            font-size: var(--font-size-18);
+            transition: 0.3s ease-in-out;
+        }
+
             /* Show text My account and amount in basket */
             .main-menu .main-menu-links #cart-total{
                 display: inline;
@@ -1245,7 +1297,7 @@ a {
                         width: 15%;
                     }
     
-    }
+}
 /* Responsive settings - Medium sized screens */
 @media (min-width:768px){
     .container{
@@ -1272,13 +1324,24 @@ a {
 
 /* ---- Main menu ---- */
     .main-menu .main-menu-links{
-        flex: 7;
+        flex: 2;
+    }
+
+    .main-menu .main-menu-links #compare-products {
+        display: inherit;
     }
 
         /* Show text My account and amount in basket */
         .main-menu .main-menu-links #cart-total{
             display: inline;
         }
+
+    /* Search field */
+    .main-menu .search{
+        flex: 3;
+        align-self: center;
+        width: 100%;
+    }
 
     .main-menu nav .browse-categories .browse-text{
         display: flex;
@@ -1291,6 +1354,8 @@ a {
     .main-menu nav .browse-categories .collapse{
         display: inline;
     }
+
+
 
     /* ---- Showcase ---- */
 
@@ -1511,7 +1576,17 @@ a {
     height: 250px;
 }
 
-    }
+/* ---- Sign up Sign in forms */
+.signup-signin .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5rem 0;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+
+}
 /* Responsive settings - Large screen */
 @media (min-width:992px){
 .container{
@@ -1558,17 +1633,12 @@ a {
             display: inline;
         }
 
-    /* Main menu Search field */
-    .main-menu .search{
-        flex: 2;
-        display: flex;
-        justify-content: center;
+        /* Main menu Search field */
+        .main-menu .search{
+        flex: 4;
+        align-self: center;
     }
 
-        /* Show search box input field */
-        .main-menu .search .searchbox{
-            display: inline;
-        }
 
 /* --- Bottom Navigation Menu (header) --- */
     .main-menu nav .browse-categories .browse-text{
@@ -1582,6 +1652,8 @@ a {
     .main-menu nav .browse-categories .collapse{
         display: inline;
     }
+
+
 
 
 

@@ -65,18 +65,16 @@
                 </div>
                 <!-- Search field -->
                 <div class="search">
-                    <div class="input-group">
-                        <input type="text" class="form-control searchbox" placeholder="Search">
-                        <div class="input-group-append">
-                          <button class="btn" type="button"><i class="fa-regular fa-magnifying-glass"></i></button>
-                        </div>
-                    </div>
+                    <form id="searchForm">
+                        <input type="text" id="query" placeholder="Search products">
+                        <button type="submit"><i class="fa-regular fa-magnifying-glass"></i></button>
+                    </form>
                 </div>
                 <!-- My account and Shopping cart links -->
                 <div class=" main-menu-links">
                     <a class="main-link" href="account.html"><i class="fa-regular fa-user"></i> <span>My account</span></a>
                     <a class="main-link"href=""><i class="fa-regular fa-heart"></i></a>
-                    <a class="main-link"href=""><i class="fa-regular fa-shuffle"></i></a>
+                    <a id="compare-products" class="main-link"href=""><i class="fa-regular fa-shuffle"></i></a>
                     <a id="cart" class="main-link"href="">
                         <span class="position-absolute badge rounded-pill">
                             99+
