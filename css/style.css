@@ -51,7 +51,6 @@ a {
 
     a:hover {
         color: var(--color-theme-light);
-        text-decoration: underline;
     }
 
 .bg-theme {
@@ -1034,12 +1033,12 @@ a {
             margin: 1.5rem 0;
         }
 
-            .signup-signin .card .card-text a {
+            .signup-signin .card a {
                 font-weight: var(--font-weight-medium);
                 
             }
 
-                .signup-signin .card .card-text a:hover {
+                .signup-signin .card a:hover {
                     color: var(--color-theme-dark);
                     text-decoration: underline;
                     
@@ -1070,6 +1069,90 @@ a {
             .signup-signin form input:focus {
                 outline-color: var(--color-grey-1);
             }
+    
+    .signup-signin .external-logins {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+        .signup-signin .external-logins .label {
+            background-color: var(--color-grey-4);
+            z-index: 1;
+            padding: 0 0.8rem;
+        }   
+
+        .signup-signin .external-logins .line {
+            position: absolute;
+            top: -5px;
+            left: 0;
+            right: 0;
+            border: 1px solid var(--color-grey-0);
+            opacity: 50%;
+        }
+
+        .external-socialmedia-buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1 rem;
+        }
+            .external-socialmedia-buttons span {
+                width: 100%;
+            }
+            .external-socialmedia-buttons .facebook-button {
+                font-family: Lucida Grande, Helvetica Neue, Helvetica, Arial, sans-serif;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 48%;
+                font-size: var(--font-size-18);
+                padding: 0.5rem 1rem 0.5rem 0.5rem;
+                background: #3A5A97;
+                color: #fff;
+                text-shadow: 0 -1px 0 rgba(0,0,20,.4);
+                text-decoration: none;
+                line-height: 1;
+                border-radius: 5px;
+                border: none;
+                transition: background 0.2s ease-in-out;
+            }
+
+                .external-socialmedia-buttons .facebook-button:hover {
+                    background: #1e2d4b;
+                }
+
+                .external-socialmedia-buttons .facebook-button:hover {
+                    
+                }
+
+            .external-socialmedia-buttons .google-button {
+                font-family: Lucida Grande, Helvetica Neue, Helvetica, Arial, sans-serif;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 48%;
+                font-size: var(--font-size-18);
+                padding: 0.5rem 1rem 0.5rem 0.5rem;
+                background: #4285f4;
+                color: #fff;
+                text-shadow: 0 -1px 0 rgba(0,0,20,.4);
+                text-decoration: none;
+                line-height: 1;
+                position: relative;
+                border-radius: 5px;
+                border: none;
+                transition: background 0.2s ease-in-out;
+            }
+
+                .external-socialmedia-buttons .google-button:hover {
+                    background: #1669F2;
+                    
+
+                .external-socialmedia-buttons .google-button:hover {
+                        
+                }
+
 
 /* ---- Footer ---- */
 .footer {
