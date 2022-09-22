@@ -1108,14 +1108,14 @@ a {
                 width: 48%;
                 font-size: var(--font-size-18);
                 padding: 0.5rem 1rem 0.5rem 0.5rem;
-                background: #3A5A97;
+                background-color: #3A5A97;
                 color: #fff;
                 text-shadow: 0 -1px 0 rgba(0,0,20,.4);
                 text-decoration: none;
                 line-height: 1;
                 border-radius: 5px;
                 border: none;
-                transition: background 0.2s ease-in-out;
+                transition: background-color 0.2s ease-in-out;
             }
 
                 .external-socialmedia-buttons .facebook-button:hover {
@@ -1134,7 +1134,7 @@ a {
                 width: 48%;
                 font-size: var(--font-size-18);
                 padding: 0.5rem 1rem 0.5rem 0.5rem;
-                background: #4285f4;
+                background-color: #4285f4;
                 color: #fff;
                 text-shadow: 0 -1px 0 rgba(0,0,20,.4);
                 text-decoration: none;
@@ -1142,7 +1142,7 @@ a {
                 position: relative;
                 border-radius: 5px;
                 border: none;
-                transition: background 0.2s ease-in-out;
+                transition: background-color 0.2s ease-in-out;
             }
 
                 .external-socialmedia-buttons .google-button:hover {
