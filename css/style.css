@@ -225,22 +225,25 @@ a {
     .main-menu > .container{
         height: 100%;
         display:flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        padding: 2rem 1.1rem;
+        padding: 1rem 2rem 0.6rem 2rem;
     }
 
     /* Main menu Logotype */
     .main-menu .logo{
-        flex: 2;
         margin-right: 1rem;
+        order: 1;
     }
 
     /* Main menu Search field */
     .main-menu .search{
-        flex: 1;
-        align-self: center;
-    }
+        order: 3;
+        margin-top: 0.8rem;
+        justify-self: center;
+        width: 100%;
+     }
 
         .main-menu .search #searchForm{
             height: 35px;
@@ -249,8 +252,6 @@ a {
         }
 
             .main-menu .search #searchForm input {
-                display: none;
-                position: absolute;
                 border-radius: var(--border-radius-medium);
                 height: 100%;
                 width: 100%;
@@ -286,8 +287,8 @@ a {
     .main-menu .main-menu-links{
         display: flex;
         justify-content: flex-end;
-        align-items: center;
-        flex: 3;
+        align-items: baseline;
+        order: 2;
     }
 
         .main-menu .main-menu-links #compare-products {
@@ -298,6 +299,9 @@ a {
             color: var(--color-theme-dark);
             text-decoration: none;
             margin: 0 0.6rem;
+            display: flex;
+            align-items: center;
+            gap: 0.2rem; 
         }
 
             .main-menu .main-menu-links .main-link:hover{
@@ -322,7 +326,7 @@ a {
 
             .main-menu .main-menu-links #cart .badge {
                 position: absolute;
-                top: -0.6rem;
+                top: -0.8rem;
                 left: 0.6rem;
                 background-color: var(--color-theme);
             }
@@ -1214,36 +1218,37 @@ a {
     }
     
     /* ---- Main menu ---- */
-    .main-menu .main-menu-links{
-        flex: 3;
+
+    .main-menu > .container{
+        padding: 2rem 2rem;
     }
 
-        /* Show text My account and amount in basket */
+    .main-menu .logo{
+        flex: 2;
+        margin-right: 1rem;
+        order: 1;
+    }
+
+    .main-menu .main-menu-links{
+        flex: 3;
+        order: 3;
+    }
+
         .main-menu .main-menu-links #cart-total{
             display: inline;
         }
 
     .main-menu .search{
         flex: 5;
+        order: 2;
+        margin-top: 0;
     }
 
         .main-menu .search #searchForm input {
             display: inherit;
+            position: absolute;
         }
         
-        .main-menu .search #searchForm button {
-            position: absolute;
-            top: 0;
-            right: -3px;
-            width: 45px;
-            height: 100%;
-            background-color: var(--color-theme);
-            color: var(--color-white);
-            border: none;
-            border-radius: 0 var(--border-radius-medium) var(--border-radius-medium) 0;
-            font-size: var(--font-size-18);
-            transition: 0.3s ease-in-out;
-        }
 
     .main-menu nav .browse-categories .browse-text{
         display: flex;
